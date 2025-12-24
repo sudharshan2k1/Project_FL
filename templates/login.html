@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f4f7;
+        }
+        .card {
+            width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 6px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input, button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 10px;
+        }
+        button {
+            background: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        a {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h2>Login</h2>
+
+        <!-- FIX: POST to /login -->
+        <form method="POST" action="/login">
+            <input type="text" name="mobile" placeholder="Mobile Number" required>
+            <input type="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+
+        <a href="/register">Create an account</a>
+    </div>
+</body>
+</html>
